@@ -15,12 +15,21 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
+  other-modules:       Network.Notam
   exposed-modules:     Lib
   build-depends:       base >= 4.7 && < 5
                      , aeson
                      , servant-server
                      , wai
                      , warp
+                     , html-conduit
+                     , xml-conduit
+                     , xml-lens
+                     , wreq
+                     , text
+                     , bytestring
+                     , lens
+                     , uniplate
   default-language:    Haskell2010
 
 executable aviation-exe
